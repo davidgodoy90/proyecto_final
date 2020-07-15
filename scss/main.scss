@@ -1,0 +1,250 @@
+
+
+
+$titulo: 50px 'roboto';
+$color: blue;
+
+
+.header{
+	
+color:$color;
+font:$titulo;
+
+  .header__titulo {
+
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+    
+
+    background-repeat: no-repeat;
+
+    background-size:cover;
+
+  }
+
+}
+
+$margen:1000px;
+
+.footer{
+	
+
+	  margin-top: $margen/2;
+
+
+      color:$color;
+
+      text-align: center;
+      
+      font: $titulo;
+}
+
+/*JUEGOS*/
+
+$juegos:xbox;
+
+p{
+	
+  @if $juegos == xbox {
+  color: green;
+  }
+  @else if $juegos == ps4 {
+  color: blue;
+  }
+  @else if $juegos == pc {
+  color: yellow;
+  }
+  else{
+  color:black;
+  }
+
+}
+
+/*CONTACTO*/
+
+
+.contacto{
+
+     text-align: center;
+     color:rgb(43, 8, 80); 
+
+}
+
+.formulario{
+
+  margin-bottom:  100px;
+  border: solid 1px black;
+  width: 650px;
+  height: 700px;
+  position: absolute;
+  left: 420px;
+  background-color: green;
+  opacity: 0.5;
+
+
+
+
+.roww{
+
+  border: solid 1px;
+  width: 550px;
+  height: 600px;
+  position: absolute;
+  left: 50px;
+  top:50px;
+  z-index: 1;
+  background-color: white;
+  
+
+
+
+
+
+
+.col{
+
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 90px;
+  top: 10px;
+
+
+
+
+input {
+
+  
+  
+  margin: 10px;
+  padding: 10px;
+  transition: all 2s;
+
+
+
+input:focus {
+
+ width: 50px;
+ font-size: 24px;
+
+      }
+     }
+    }
+  }
+}
+
+
+
+/*Clase Grid con Media Queries*/
+
+
+
+@media only screen and (min-width:1024px)  {
+
+#grid {
+
+   display:grid;
+   grid-template-areas: 
+   "PCARMADAS PCARMADAS PCARMADAS PCARMADAS"
+   "FILTRO MULTIMEDIA BASICGAMER ADVANCEGAMER"
+   "FILTRO MULTIMEDIA BASICGAMER ADVANCEGAMER"
+   "FILTRO MULTIMEDIA BASICGAMER ADVANCEGAMER"
+   "ACERCADEDVV ACERCADEDVV ACERCADEDVV ACERCADEDVV";
+    grid-template-rows: 200px 200px 200px 200px 150px;
+    grid-template-columns: 250px 421px 421px 421px;
+
+
+    }
+
+header {
+
+  grid-area: PCARMADAS;
+
+}
+
+
+section#productos {
+
+grid-area: MULTIMEDIA;
+
+  }
+
+section#productos2 {
+
+grid-area: BASICGAMER;
+
+
+  }
+
+section#productos3 {
+
+  grid-area: ADVANCEGAMER;
+
+}
+
+
+nav {
+  
+  grid-area: FILTRO; 
+
+}
+
+
+footer {
+
+  grid-area: ACERCADEDVV;
+
+}
+
+    .border {
+    
+    background-color: green;
+    text-align: center;
+    border:4px solid black;
+    
+ 
+
+       }
+  
+    
+}
+
+/*Clase Combosupgrade*/
+
+
+.combosUpgrade {
+
+  text-align: center;
+  color:rgb(216, 85, 85);
+
+}
+
+
+#logos {
+
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+}
+
+
+#logos img {
+  
+  position: absolute;
+  left: 0px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out; 
+  transition: opacity 1s ease-in-out;  
+
+}
+
+#logos img.izquierda:hover {
+
+     opacity: 0;
+
+}
