@@ -46,6 +46,18 @@ $margen:1000px;
 
 $juegos:xbox;
 
+.juegos {
+  
+text-align: center;
+
+}
+
+.titOfertas {
+  
+text-align: center;
+
+}
+
 p{
 	
   @if $juegos == xbox {
@@ -157,18 +169,26 @@ input:focus {
     grid-template-columns: 250px 421px 421px 421px;
 
 
+    
+
     }
 
-header {
+section#productos4 {
 
   grid-area: PCARMADAS;
 
 }
 
 
+
+
 section#productos {
 
+
+
 grid-area: MULTIMEDIA;
+
+
 
   }
 
@@ -201,16 +221,34 @@ footer {
 
     .border {
     
-    background-color: green;
+    background-color: rgb(192, 225, 249);
     text-align: center;
     border:4px solid black;
     
  
 
        }
-  
+
+
+
+
+
+       .border1 {
     
-}
+    background-color: rgb(138, 245, 68);
+    text-align: center;
+    border:4px solid black;
+    
+ 
+
+       }
+
+        } 
+
+
+
+    
+
 
 /*Clase Combosupgrade*/
 
@@ -246,5 +284,45 @@ footer {
 #logos img.izquierda:hover {
 
      opacity: 0;
+
+}
+
+#logos img.derecha:hover {
+     
+
+     opacity: 0;
+
+}
+
+
+/*PARTES*/
+
+
+  
+  
+
+
+
+table tr td ul {
+  
+  text-align: center;
+  font-size:  35px;
+  
+}
+
+
+
+.colores {
+  
+  color: rgb(49, 158, 236);
+  text-align: center;
+}
+
+
+.partes {
+
+
+  margin-bottom: 100px;
+  text-align: center;
 
 }
